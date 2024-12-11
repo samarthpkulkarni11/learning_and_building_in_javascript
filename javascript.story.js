@@ -1,0 +1,1 @@
+//Some info on javascript to be known - Just read through for few minutes.

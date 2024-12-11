@@ -21,6 +21,18 @@ var variableone; // This is known as declaring a variable
 
 var variableone = "valueone"; // This is known as initialisng a variable by storing some value in it.
 
+//Let us try to print only declared variable but not initialised with any value
+
+var onlyDeclaredVariable; //returns undefined as the result as the variable is only declared but not initialised by assigning any value to it!
+console.log(onlyDeclaredVariable)
+let justDeclaredVariable;
+console.log(justDeclaredVariable);
+
+//What if we just declare the variable with empty string
+
+var emptyStringVariable = ""; // dumb try ofcourse it will print empty space as result :)
+console.log(emptyStringVariable)
+
 //Similarly we can also initalise variables using let and const here
 
 let variabletwo = "valuetwo";
@@ -65,7 +77,7 @@ var varseven = "valueseven"; //throws undefined as the result but does not throw
 
 //Try the same along let
 console.log(vareight);
-const vareight = "valueeight"; //Throws ReferenceError: Cannot access 'vareight' before initialization both for let and const!!
+var vareight = "valueeight"; //Throws ReferenceError: Cannot access 'vareight' before initialization both for let and const!!
 
 //Types of variable declarations
 

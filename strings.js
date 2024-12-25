@@ -84,3 +84,13 @@ console.log(charAtString.charAt(9)); //works with only index numbers.
 console.log(charAtString.charAt('I')); //if tried with character value, returns `H` as the result dont know what this means!
 console.log(charAtString.charCodeAt(9)); //returns the ascii value of the character's index specified
 console.log(charAtString.charCodeAt('H')); //this works well with string value also still returns the ascii value for the character in the string.
+
+//7. split methods - Helping to divide the given string into different string with the specified char value.
+
+const splitString = 'Hello, I, am, string, split, me, using, split, method,!';
+console.log(splitString.split(',')); //takes only single agrument and deletes that argument from the string and gives back the splits as result.
+
+//8. String Template Literals - ${} operator
+
+const someRandomValue = 852741963;
+console.log(`I have some random value specified as ${someRandomValue}`); //can insert only js terms and need to use it along backticks ` `

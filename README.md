@@ -1,5 +1,16 @@
 # Readme for JavaScript Zero-To-One.
 
+## Table of Contents
+- [JavaScript Brief History](#javascript-brief-history)
+- [Working with JavaScript](#working-with-javascript)
+- [JavaScript Variable Basics](#javascript-variable-basics)
+  - [Variable Declaration Rules](#variable-declaration-rules)
+  - [Types of Declarations](#types-of-declarations)
+  - [Global vs Block Scope](#global-vs-block-scope)
+  - [Example: Hoisting and Temporal Dead Zone (TDZ)](#example-hoisting-and-temporal-dead-zone-tdz)
+
+---
+
 # Javascript Brief History
 
 Take a moment to understand the fascinating journey of JavaScript:

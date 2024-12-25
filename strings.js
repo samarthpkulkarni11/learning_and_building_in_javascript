@@ -44,3 +44,43 @@ console.log(trimStartAndLowerCase.trimStart().toLowerCase())
 const trimEndAndUpperCase = "TRIM ME aT ThE EnD & CONVERT me to LoWer CaSE";
 console.log(trimEndAndUpperCase.trimEnd().toUpperCase());
 
+//Methods with arguments included
+
+//1. includes() method - This method checks for the includes with argument inside the applied string if it exists it returns true else false. This method is case sensitive too!
+//which means Am cannot be checked with am and result will return false.
+
+let includesCheckString = "Hi I am string! Check for the includes method";
+console.log(includesCheckString.includes('check'));
+
+//2.indexOf() method - This method is used to find the index of the character in the given string. It only supports single char check and returns -1 as the result for invalid or
+//unknown character in the given string.
+
+let stringWithMethodsApplied = "This is a quite long string with AbcDEF weird charActers to check and play @round with STRING methods";
+console.log(stringWithMethodsApplied.indexOf('i'));
+
+// 3.replace() method - This method involves replacing the first string argument with the next string argument being applied on.
+
+console.log(stringWithMethodsApplied.replace('This', 'Hello'))  
+console.log(stringWithMethodsApplied) // Does not modify or overwrite the original string but just does the job of the operation on the specified string.
+console.log(stringWithMethodsApplied.replace('Hey', 'Hello')) // If the first element to be replaced is not found in the string it will return back the original string as the result does not throw any error or any such thing.
+
+console.log(stringWithMethodsApplied.replaceAll('i', 'I')) //replaces all the string values with the given replacement value.
+
+//4. concat() method - This is used to add two or multiple strings into some single value.
+
+let concatedString = includesCheckString.concat(' ', stringWithMethodsApplied);
+console.log(concatedString)
+
+//5. padStart() and padEnd() methods - Adds up the given argument to the specified string. Takes argument as - appliedstring.padStart(totallengthofstringincludingpaddingchar, 'padding char')
+
+let padString = '8525';
+console.log(padString.padStart(8, '*'));
+console.log(padString.padEnd(8, '#'));
+
+//6. charAt() and charCodeAt() methods - Helps in finding the character and code (ascii value) of the character index specified on the applied string.
+
+let charAtString = "Hello I am string again!";
+console.log(charAtString.charAt(9)); //works with only index numbers.
+console.log(charAtString.charAt('I')); //if tried with character value, returns `H` as the result dont know what this means!
+console.log(charAtString.charCodeAt(9)); //returns the ascii value of the character's index specified
+console.log(charAtString.charCodeAt('H')); //this works well with string value also still returns the ascii value for the character in the string.

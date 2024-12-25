@@ -68,7 +68,8 @@ let blockVar = "block";
 }
 console.log(blockVar); // "block"
 
-## Javascript Brief History
+```
+# Javascript Brief History
 
 Take a moment to understand the fascinating journey of JavaScript:
 

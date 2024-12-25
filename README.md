@@ -210,7 +210,34 @@ var printMyName = prompt("Please enter your name here: ");
 console.log(`Hi` + " " + printMyName + " " + "Welcome here!!");
 ```
 
+# Using `alert()`, `confirm()`, and `prompt()` in JavaScript
 
+In JavaScript, `alert()`, `confirm()`, and `prompt()` are commonly used functions for interacting with users through dialog boxes. These functions are part of the browser's window object and are often used in web applications to gather input or display messages.
+
+### alert()
+The `alert()` function displays a simple pop-up message to the user. It only contains a message and an "OK" button.
+
+- **Syntax**:  
+  ```
+  alert("Your message here");
+  
+  ```
+### confirm()
+The confirm() function displays a dialog box with a message and OK and Cancel buttons. It returns true if the user clicks "OK" and false if the user clicks "Cancel".
+
+- **Syntax**:  
+  ```
+  const result = confirm("Are you sure?");
+  
+  ```
+### prompt()
+The prompt() function displays a dialog box with a message and an input field, allowing the user to enter some text. It returns the text entered by the user (or null if the user clicks "Cancel").
+  
+- **Syntax**:  
+  ```
+  const userInput = prompt("Please enter your name:");
+  
+  ```
    
 
 

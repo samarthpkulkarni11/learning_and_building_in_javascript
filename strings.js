@@ -15,6 +15,7 @@ const findingStringLength = "this is a one of the string let us check its value 
 console.log(findingStringLength.length)
 
 //String methods without arguements
+//
 //trim()
 //trimStart()
 //trimEnd()
@@ -34,4 +35,12 @@ console.log(startTrimString.trimStart());
 
 const endTrimString = "trim me at the end!         ";
 console.log(endTrimString.trimEnd());
+
+//Let us trim and convert the case of the following strings.
+
+const trimStartAndLowerCase = "          trim ME at The Start and Convert the CASE TO LOWER CASE";
+console.log(trimStartAndLowerCase.trimStart().toLowerCase())
+
+const trimEndAndUpperCase = "TRIM ME aT ThE EnD & CONVERT me to LoWer CaSE";
+console.log(trimEndAndUpperCase.trimEnd().toUpperCase());
 

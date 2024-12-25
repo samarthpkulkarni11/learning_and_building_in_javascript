@@ -79,3 +79,38 @@ The language was later renamed LiveScript and finally JavaScript (to leverage th
 To ensure consistency across browsers, ECMA (European Computers Market Association) standardized JavaScript, introducing rules and updates in the form of ECMAScript (ES) versions, such as ES4, ES5, and ES6.
 
 Initially, JavaScript was interpreted line-by-line. However, modern advancements like Google Chrome's V8 engine transformed it into a Just-In-Time Compiler for improved performance, compiling code as it runs.
+
+# Working with JavaScript
+
+Whenever we write code in JavaScript, it gets executed in two phases:
+
+### 1. Memory Creation Phase
+In this phase:
+- The JavaScript engine scans the code to find all declared variables.
+- It allocates space in memory for these variables with the `undefined` value and `undefined` data type.
+
+### 2. Code Execution Phase
+In this phase:
+- The JavaScript engine assigns values to the declared variables.
+- It determines the correct data type for each variable.
+
+### Debugging Phases
+While the memory creation and execution phases are not directly visible, you can inspect the process:
+1. Open your browser's **Inspect > Sources** tab.
+2. Use a **debugger** to observe the memory creation phase and how values are assigned sequentially.
+
+---
+
+### Example: Hoisting and Temporal Dead Zone (TDZ)
+```javascript
+// Variable declarations:
+console.log(varVariable); // undefined
+var varVariable = "some var value"; // Hoisted but initialized to undefined
+
+// Accessing `let` and `const` before declaration throws an error:
+console.log(letVariable); // ReferenceError
+console.log(constVariable); // ReferenceError
+
+let letVariable = "some let value";
+const constVariable = "some const value";
+```

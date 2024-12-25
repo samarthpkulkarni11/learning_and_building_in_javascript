@@ -67,3 +67,14 @@ let blockVar = "block";
     console.log(blockVar); // "updated block"
 }
 console.log(blockVar); // "block"
+
+## Javascript Brief History
+
+Take a moment to understand the fascinating journey of JavaScript:
+
+Back in the 1990s, Netscape, a popular browser with 90% market share, sought to make websites dynamic.
+Brendan Eich developed the first version of JavaScript (then called Mocha) in just 10 days.
+The language was later renamed LiveScript and finally JavaScript (to leverage the popularity of Java at the time). Note that JavaScript has no relation to Java.
+To ensure consistency across browsers, ECMA (European Computers Market Association) standardized JavaScript, introducing rules and updates in the form of ECMAScript (ES) versions, such as ES4, ES5, and ES6.
+
+Initially, JavaScript was interpreted line-by-line. However, modern advancements like Google Chrome's V8 engine transformed it into a Just-In-Time Compiler for improved performance, compiling code as it runs.

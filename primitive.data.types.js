@@ -59,5 +59,5 @@ console.log(parseInt("746384774jkahfahfhhhhi3gry3764834")); //Does not completel
 //One last function which is very useful and handy to know is prompt();
 //Prompt is oftenly used to get the value from the user or client basically maybe client is not the better word here but yaa basically to get the input
 
-var printMyName = prompt("Please enter your name here: ");
-console.log(`Hi` + " " + printMyName + " " + "Welcome here!!")
+// var printMyName = prompt("Please enter your name here: ");
+// console.log(`Hi` + " " + printMyName + " " + "Welcome here!!")

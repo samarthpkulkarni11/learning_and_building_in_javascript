@@ -174,14 +174,14 @@ console.log(typeof(booleanType)); // Any variable data type can be checked with 
 
 ### Interesting Facts About Data Types in JS
 
-1. Type Coercion: When you add the + operator to a string, JavaScript will attempt to convert it to a number if possible.
+### Type Coercion: When you add the + operator to a string, JavaScript will attempt to convert it to a number if possible.
 
 ```
 let stringToNumberType = +'100';
 console.log(typeof(stringToNumberType)); // Prints 'number'
 ```
 
-2. Type Conversion for Other Values: Similarly, you can observe conversions for other types:
+### Type Conversion for Other Values: Similarly, you can observe conversions for other types:
 
 ```
 console.log(typeof (+null)); // 'number'
@@ -189,21 +189,21 @@ console.log(typeof (-false)); // 'number'
 console.log(typeof ('1000qjhdahdajhsjhdahhdljdha0000')); // 'number' (NaN)
 ```
 
-3. Operator Precedence: In mathematical operations, the * and / operators have higher precedence than + and -
+### Operator Precedence: In mathematical operations, the * and / operators have higher precedence than + and -
 
 ```
 console.log(2 + 4 - 6 * 12 / 6); // Order of operations, prints 2
 console.log((2 + 4) - 5 * 6 / 3); // With brackets, it prints 2
 ```
 
-4. Parsing Values with parseInt(): The parseInt() function is helpful for extracting numbers from a jumbled string
+### Parsing Values with parseInt(): The parseInt() function is helpful for extracting numbers from a jumbled string
 
 ```
 console.log(parseInt('192948ajfauohfhaohhaoofqofoqoqiqq')); // 192948
 console.log(parseInt("746384774jkahfahfhhhhi3gry3764834")); // 746384774
 ```
 
-5. Prompt for User Input: prompt() is used to get input from the user
+### Prompt for User Input: prompt() is used to get input from the user
 
 ```
 var printMyName = prompt("Please enter your name here: ");

@@ -116,3 +116,109 @@ const constVariable = "some const value";
 ```
 TDZ (Temporal Dead Zone): Variables declared with let or const are in a temporal dead zone from the start of their block until their declaration is encountered. Accessing them during this time throws a ReferenceError.
 var allows access before declaration (hoisted as undefined) because it is the oldest JavaScript declaration type.
+
+# Primitive Data Types 
+
+### These are predefined types with specific meanings and direct representations of values.
+
+Examples:
+Number
+Null
+String
+Symbol
+Boolean
+BigInt
+Undefined
+
+### Non-Primitive (Reference) Data Types
+These types are usually user-defined and don't inherently carry a meaning. They can store complex data structures or values.
+
+Examples:
+Arrays
+Objects
+Regular Expressions
+Functions
+Maps
+Sets
+
+```
+var numberType = 123456; // This is a number data type variable
+
+let nullType = null; // Obviously its null
+
+// BigInt: Used to represent large integers beyond the Number type's range.
+const bigIntType = BigInt("123456789012345678901234567890"); // A big-valued integer
+
+const booleanType = 'true or false'; // Can have both values as booleans
+
+const stringType = `A simple string with backticks helps to use template literals which will be covered soon!`; // Most of the time, used - A Stringgg!
+
+// Symbol: Unique identifier, often used as keys in objects.
+var symbolType = Symbol();
+console.log(symbolType); // Symbol()
+
+// Creating a Symbol with a description
+var moreSymbolType = Symbol("description");
+console.log(moreSymbolType); // Symbol(description)
+
+var undefinedType; //:)
+
+```
+
+### typeof() function
+We can check the data type of any variable using the typeof() function.
+
+```
+console.log(typeof(booleanType)); // Any variable data type can be checked with this function.
+```
+
+### Interesting Facts About Data Types in JS
+
+1. Type Coercion: When you add the + operator to a string, JavaScript will attempt to convert it to a number if possible.
+
+```
+let stringToNumberType = +'100';
+console.log(typeof(stringToNumberType)); // Prints 'number'
+```
+
+2. Type Conversion for Other Values: Similarly, you can observe conversions for other types:
+
+```
+console.log(typeof (+null)); // 'number'
+console.log(typeof (-false)); // 'number'
+console.log(typeof ('1000qjhdahdajhsjhdahhdljdha0000')); // 'number' (NaN)
+```
+
+3. Operator Precedence: In mathematical operations, the * and / operators have higher precedence than + and -
+
+```
+console.log(2 + 4 - 6 * 12 / 6); // Order of operations, prints 2
+console.log((2 + 4) - 5 * 6 / 3); // With brackets, it prints 2
+```
+
+4. Parsing Values with parseInt(): The parseInt() function is helpful for extracting numbers from a jumbled string
+
+```
+console.log(parseInt('192948ajfauohfhaohhaoofqofoqoqiqq')); // 192948
+console.log(parseInt("746384774jkahfahfhhhhi3gry3764834")); // 746384774
+```
+
+5. Prompt for User Input: prompt() is used to get input from the user
+
+```
+var printMyName = prompt("Please enter your name here: ");
+console.log(`Hi` + " " + printMyName + " " + "Welcome here!!");
+```
+
+
+   
+
+
+
+
+
+
+
+
+
+

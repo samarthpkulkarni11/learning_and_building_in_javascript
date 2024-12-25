@@ -8,6 +8,9 @@
   - [Types of Declarations](#types-of-declarations)
   - [Global vs Block Scope](#global-vs-block-scope)
   - [Example: Hoisting and Temporal Dead Zone (TDZ)](#example-hoisting-and-temporal-dead-zone-tdz)
+- [Primitive Data Types](#primitive-data-types)
+- [Non-Primitive (Reference) Data Types](#non-primitive-reference-data-types)
+- [Using `alert()`, `confirm()`, and `prompt()` in JavaScript](#using-alert-confirm-and-prompt-in-javascript)
 
 ---
 

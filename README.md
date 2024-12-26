@@ -365,7 +365,7 @@ In JavaScript, there are exactly five falsy values:
 
 3. Empty string (`''` or `""`)
    ```javascript
-   Boolean('')    // false
+   Boolean(' ')    // gives true for empty string with space.
    Boolean("")    // false
    ```
 

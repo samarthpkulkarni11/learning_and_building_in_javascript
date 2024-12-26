@@ -241,7 +241,222 @@ The prompt() function displays a dialog box with a message and an input field, a
   const userInput = prompt("Please enter your name:");
   
   ```
+
+# JavaScript Math Object Documentation
+
+## Overview
+The Math object in JavaScript provides a collection of properties and methods for performing mathematical operations. This documentation covers the essential properties and methods of the Math object with practical examples.
+
+## Properties
+The Math object includes several mathematical constants:
+- `Math.E`: Euler's number (≈ 2.718)
+- `Math.LN2`: Natural logarithm of 2 (≈ 0.693)
+- `Math.LN10`: Natural logarithm of 10 (≈ 2.303)
+- `Math.LOG2E`: Base-2 logarithm of E (≈ 1.443)
+- `Math.LOG10E`: Base-10 logarithm of E (≈ 0.434)
+- `Math.PI`: Pi constant (≈ 3.142)
+- `Math.SQRT1_2`: Square root of 1/2 (≈ 0.707)
+- `Math.SQRT2`: Square root of 2 (≈ 1.414)
+
+## Common Methods
+
+### Rounding Methods
+```javascript
+Math.floor(x)    // Rounds down to nearest integer
+Math.ceil(x)     // Rounds up to nearest integer
+Math.round(x)    // Rounds to nearest integer
+```
+
+Key differences:
+- `floor()`: Always rounds down (12.54 → 12)
+- `ceil()`: Always rounds up (12.54 → 13)
+- `round()`: Rounds to nearest integer (12.4 → 12, 12.6 → 13)
+
+### Mathematical Operations
+```javascript
+Math.pow(x, y)   // Returns x raised to power y
+Math.sqrt(x)     // Returns square root of x
+```
+
+### Random Number Generation
+```javascript
+// Generate random number between 0 and 9
+Math.floor(Math.random() * 10)
+
+// Generate random number between min and max (inclusive)
+let randomNumber = Math.floor(Math.random() * (max - min + 1) + min)
+```
+
+## Examples
+
+Basic usage:
+```javascript
+let value = 12.54;
+console.log(Math.floor(value));     // Output: 12
+console.log(Math.ceil(value));      // Output: 13
+console.log(Math.pow(value, 2));    // Output: 157.2516
+console.log(Math.sqrt(value));      // Output: 3.5411...
+```
+
+Random number generation within range:
+```javascript
+let min = 10;
+let max = 20;
+let random = Math.floor(Math.random() * (max - min + 1) + min);
+// Generates a random integer between 10 and 20 (inclusive)
+```
+
+## Best Practices
+1. Use `Math.floor()` with `Math.random()` when generating random integers
+2. Always specify range boundaries when generating random numbers
+3. Be aware of floating-point precision when working with decimal numbers
+
+## Notes
+- All Math object properties are read-only
+- Methods always return a number value
+- The Math object cannot be instantiated (no `new Math()`)
+
+# JavaScript Truthy and Falsy Values
+
+## Overview
+In JavaScript, all values have an inherent boolean value when used in a boolean context. These values are categorized as either "truthy" or "falsy". While there are many truthy values, there are only a few specific falsy values.
+
+## Falsy Values
+In JavaScript, there are exactly five falsy values:
+
+1. `0` and `-0`
+   ```javascript
+   Boolean(0)     // false
+   Boolean(-0)    // false
+   ```
+
+2. `NaN` (Not a Number)
+   ```javascript
+   Boolean(NaN)   // false
+   ```
+
+3. Empty string (`''` or `""`)
+   ```javascript
+   Boolean('')    // false
+   Boolean("")    // false
+   ```
+
+4. `undefined`
+   ```javascript
+   Boolean(undefined)   // false
+   ```
+
+5. `null`
+   ```javascript
+   Boolean(null)   // false
+   ```
+
+## Truthy Values
+Everything else not listed above is considered truthy. Some examples include:
+```javascript
+Boolean(1)         // true
+Boolean(-1)        // true
+Boolean('hello')   // true
+Boolean([])        // true
+Boolean({})        // true
+Boolean(true)      // true
+```
+
+## Practical Usage
+
+### In Conditional Statements
+```javascript
+if (value) {
+    // Executes if value is truthy
+} else {
+    // Executes if value is falsy
+}
+```
+
+### Common Use Cases
+```javascript
+// Checking for empty strings
+const name = '';
+if (!name) {
+    console.log('Name is empty');
+}
+
+// Checking for undefined values
+const value = undefined;
+if (!value) {
+    console.log('Value is not defined');
+}
+```
+
+## Best Practices
+1. Use explicit comparisons when checking for specific values:
+   ```javascript
+   // Instead of
+   if (value) {}
    
+   // Better to be explicit when checking for null/undefined
+   if (value !== null && value !== undefined) {}
+   ```
+
+2. Be careful with array and object checks:
+   ```javascript
+   // Empty arrays and objects are truthy!
+   Boolean([])   // true
+   Boolean({})   // true
+   
+   // Use length or Object.keys() for emptiness checks
+   if (array.length) {}
+   if (Object.keys(obj).length) {}
+   ```
+
+## Common Gotchas
+1. The number `0` is falsy, but the string `"0"` is truthy
+2. Empty arrays `[]` and empty objects `{}` are truthy
+3. Whitespace-only strings (e.g., `" "`) are truthy
+
+# JavaScript Comparison Operators Guide
+
+## Basic Operators
+- `>` Greater than
+- `<` Less than
+- `>=` Greater than or equal to
+- `<=` Less than or equal to
+- `==` Equal to (loose equality)
+- `===` Strictly equal to
+- `!=` Not equal to
+- `!==` Strictly not equal to
+
+## Quick Reference
+
+### Loose vs Strict Comparison
+```javascript
+// Loose equality (==) converts types before comparing
+'100' == 100    // true
+
+// Strict equality (===) compares both value and type
+'100' === 100   // false
+```
+
+### Type Coercion in Comparisons
+```javascript
+const valueOne = '100';  // string
+const valueTwo = 100;    // number
+
+valueOne == valueTwo     // true (string converted to number)
+valueOne === valueTwo    // false (different types)
+valueOne != valueTwo     // false (string converted to number)
+valueOne !== valueTwo    // true (different types)
+```
+
+## Best Practices
+1. Use `===` and `!==` by default to avoid unexpected type coercion
+2. Only use `==` and `!=` when type coercion is specifically desired
+3. For numeric comparisons with strings, explicitly convert to numbers first
+
+## Common Gotchas
+- String numbers are converted to real numbers in `>`, `<`, `>=`, `<=` operations
+- `==` and `!=` perform type coercion
+- `===` and `!==` do not perform type coercion
 
 
 

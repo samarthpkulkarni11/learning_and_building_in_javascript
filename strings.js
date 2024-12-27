@@ -15,7 +15,6 @@ const findingStringLength = "this is a one of the string let us check its value 
 console.log(findingStringLength.length)
 
 //String methods without arguements
-//
 //trim()
 //trimStart()
 //trimEnd()

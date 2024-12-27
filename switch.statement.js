@@ -8,7 +8,7 @@ const userInputTwo = prompt("Enter the value for variable y");
 
 switch (userOption) {
     case 1:
-        const sum = userInputOne + userInputTwo;
+        const sum = +userInputOne + +userInputTwo;
         alert(`The addition operation for the variable ${userInputOne} and variable ${userInputTwo} is ${sum}`);
         break
     
@@ -28,8 +28,8 @@ switch (userOption) {
         break
     
     case 5:
-        const rem = userInputOne % userInputTwo;
-        alert(`The remainder after division for the variable ${userInputOne} and variable ${userInputTwo} is ${rem}`);
+        const remainder = userInputOne % userInputTwo;
+        alert(`The remainder after division for the variable ${userInputOne} and variable ${userInputTwo} is ${remainder}`);
         break
     
     default:

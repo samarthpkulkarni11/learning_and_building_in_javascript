@@ -18,3 +18,31 @@ console.log(sampleObjectOne.name);
 delete sampleObjectOne["age"];
 console.log(sampleObjectOne)
 
+//let us try to append the object with new property
+
+sampleObjectOne.location = "India";
+console.log(sampleObjectOne); //this is updated in memory to include the property with the object.
+
+//let us try to nest object inside object
+
+const sampleObjectTwo = {
+        name: "Samarth",
+        profession: "Engineering",
+        interests: "backend/server-side development",
+        age: 23,
+        contactDetails: "samarthpkulkarni11@gmail.com",
+        address: {
+            location: "Bidar, Karnataka",
+            pinCode: 585403,
+            phoneNumber: 6363944505,
+            area: "Basava Nagar, Bidar",
+        hobbies: {
+        interests: "pata nahi hoga toh hoga",
+        update: "seh lenge thoda sa"
+        }
+    },
+}
+
+console.log(sampleObjectTwo.name);
+console.log(sampleObjectTwo.address.location);
+console.log(sampleObjectTwo.address.hobbies.update)

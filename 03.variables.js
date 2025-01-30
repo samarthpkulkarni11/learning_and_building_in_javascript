@@ -24,14 +24,14 @@ var variableone = "valueone"; // This is known as initialisng a variable by stor
 //Let us try to print only declared variable but not initialised with any value
 
 var onlyDeclaredVariable; //returns undefined as the result as the variable is only declared but not initialised by assigning any value to it!
-console.log(onlyDeclaredVariable)
+console.log(onlyDeclaredVariable);
 let justDeclaredVariable;
 console.log(justDeclaredVariable);
 
 //What if we just declare the variable with empty string
 
 var emptyStringVariable = ""; // dumb try ofcourse it will print empty space as result :)
-console.log(emptyStringVariable)
+console.log(emptyStringVariable);
 
 //Similarly we can also initalise variables using let and const here
 
@@ -50,8 +50,8 @@ console.log(capitalvar);
 var variablefour = "valuefour";
 
 {
-    var variablefour = "updated valuefour"
-    console.log(variablefour)
+  var variablefour = "updated valuefour";
+  console.log(variablefour);
 }
 
 console.log(variablefour);
@@ -59,14 +59,13 @@ console.log(variablefour);
 let variablefive = "valuefive"; //Prints "updated valuefour" as the result!
 
 {
-    let variablefive = "updated valuefive";
-    console.log(variablefive); //Prints "updated valuefive" as the result!
+  let variablefive = "updated valuefive";
+  console.log(variablefive); //Prints "updated valuefive" as the result!
 }
 
 console.log(variablefive); //Prints "valuefive" as the result!
 
 const variablesix = "valuesix"; //Cannot be initialised and declared seperately, needs to be done in single instance and can be reinitialised twice after value is assigned!
-
 
 //Lets move ahead
 
@@ -87,11 +86,19 @@ var smallcased;
 //capital or largecased -- whatever
 let CAPITALLARGE;
 
-//camel cased 
+//camel cased
 const camelCased = "HUMP!"; //Most Preffered Type in JS
 
-//snake cased 
+//snake cased
 let snake_cased = "5_feet_long!";
 
 //pascal cased
 let PascalCased = "BlahBlah";
+
+let letVariable = "some let variable value";
+
+letVariable = "some updated let variable value";
+
+console.log(letVariable); //let variables can be updated but does not allow redeclaring the variable;
+
+// let letVariable = "redeclared let variable"; //prompts error - SyntaxError: Identifier 'letVariable' has already been declared

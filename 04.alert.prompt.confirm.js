@@ -6,12 +6,14 @@ const alertUser = alert("Do you wanna currently view this web page?");
 
 const reconfirmUser = confirm("Are you sure about it?");
 
-const promptUser = prompt("How are you feeling about JS?");
+const promptUser = console.log(prompt("How are you feeling about JS?"));
 
 // some crazy no sense shit here
 
-const alertPrompt = alert(prompt("What is your name?"));
+const alertPrompt = console.log(alert(prompt("What is your name?")));
 
 const alertConfirm = alert(confirm("Something to confirm from user yes or no"));
 
-const confirmPrompt = confirm("are you sure about it", prompt("Enter some value"))
+const confirmPrompt = console.log(
+  confirm("are you sure about it", prompt("Enter some value"))
+);

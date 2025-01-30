@@ -11,4 +11,4 @@ which stands for European Computers Market Association came up with laying stric
 group kept enhancing the language by releasing different versions like ES4, ES5 and ES6. This is the brief history of Mocha aka LiveScript aka JavaScript!
 One more most popular and well known fact that Javascript earlier used to be a interpreted language (converting the code into byte executable code line by line and then executing)
  but by the graceful powerful introductions of chromes engines like V8 did boost the javascript and now Javascript is popularly known as Just-In-Time Compiler language which 
-compiles the code as it is about to run on a system or a machine.`
+compiles the code as it is about to run on a system or a machine.`;

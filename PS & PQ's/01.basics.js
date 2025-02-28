@@ -47,3 +47,38 @@ console.log("10" - 5); //gives 5 as the answer and this is interesting
 
 console.log("10" * 5); //result is 50 happens same here too and  type: number
 console.log("10" / 5); //result is 2 happens same here too and type: number
+
+//Swap two variables using four different methods.
+
+// 1st method: use extra variable to swap the values.
+// 2nd method: use the array destructuring method.
+// 3rd method: without an extra variable.
+// 4th method: using XOR ^ operator (Works with JS only I think!!)
+
+//1st method:
+
+let letOne = 10;
+let letTwo = 20;
+let letThree; //added an extra variable for swapping values;
+
+letOne = letThree;
+letTwo = letOne;
+letOne = letThree;
+
+console.log(letOne, letTwo);
+
+//2nd method
+
+[letOne, letTwo] = [letTwo, letOne];
+
+//3rd method
+
+letOne = letOne + letTwo;
+letTwo = letOne - letTwo;
+letOne = letOne - letTwo;
+
+//4th method -- converts the given value into binary, does the operation of adding binary numbers and gives back the result.
+
+letOne = letOne ^ letTwo;
+letTwo = letOne ^ letTwo;
+letOne = letOne ^ letTwo;

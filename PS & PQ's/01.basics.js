@@ -65,8 +65,6 @@ letOne = letThree;
 letTwo = letOne;
 letOne = letThree;
 
-console.log(letOne, letTwo);
-
 //2nd method
 
 [letOne, letTwo] = [letTwo, letOne];
@@ -82,3 +80,5 @@ letOne = letOne - letTwo;
 letOne = letOne ^ letTwo;
 letTwo = letOne ^ letTwo;
 letOne = letOne ^ letTwo;
+
+console.log(`The new swapped values are ${letOne}, ${letTwo}`);

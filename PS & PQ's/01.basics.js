@@ -7,7 +7,7 @@
 const varone = 10;
 const vartwo = 20;
 
-console.log("The sum of varone and vartwo is: ", +(varone + vartwo)); //Addded extra () for BODMAS else concatenation iykyk :)
+console.log("The sum of varone and vartwo is: ", +(varone + vartwo)); //Added extra () for BODMAS else concatenation iykyk :)
 
 //M2 - accepting input from user to add a variable and console the sum.
 

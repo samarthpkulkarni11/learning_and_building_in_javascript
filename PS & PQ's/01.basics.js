@@ -81,4 +81,10 @@ letOne = letOne ^ letTwo;
 letTwo = letOne ^ letTwo;
 letOne = letOne ^ letTwo;
 
+//this is also one more method which works for strictly non zero inputs
+
+letOne = letOne * letTwo;
+letTwo = letOne / letTwo;
+letOne = letOne / letTwo;
+
 console.log(`The new swapped values are ${letOne}, ${letTwo}`);

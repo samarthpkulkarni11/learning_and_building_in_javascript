@@ -45,3 +45,9 @@ const objectInArray = [
 ];
 console.log(objectInArray);
 console.log(objectInArray.length);
+
+//trying to insert object into array -- like why literally why but bhai ne bola hai karne ka toh karne ka
+
+// let bevdaArray = ["RCB", "ESCN", "{
+//   "name": "samarth",
+// }", ] //compiler got crazy here by looking at my changes and some apshabds too so let me try again in sometime.

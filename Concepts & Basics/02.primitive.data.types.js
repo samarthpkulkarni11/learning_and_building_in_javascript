@@ -3,7 +3,7 @@
 `There are majorly two different data types in JS they are -
 
 Primitive Data types - These are the one which are actually predefined and has an actual meaning to the data stored under a particular type.
-Examples - Number, Null, String, Symbol, Boolean, BigInt and Undefined.
+Examples - Number, Null, String, Symbol, Boolean, BigInt and Undefined. (NNBBSSU)
 
 Non Primitve Data types - These are the one which are user defined and does not have any meaning to their names and can store any format of data.
 Examples - Arrays, Objects, Regular Expressions, Functions, Maps, Sets etc `;
@@ -16,7 +16,8 @@ let nullType = null; //Obviously its null
 //BigInt and this is the way of how big values in JS are stored rather than a simple number.
 const bigIntType = BigInt("123456789012345678901234567890"); //A big valued integer variable
 
-const booleanType = "true or false"; // Can have both the values as the booleans
+const booleanType = true; // Can have both the values as the booleans
+const booleanTypeTwo = false;
 
 const stringType = `A simple string with backticks helps to use template literals which will be covered soon!`; // Most of the times used - A Stringgg!
 
@@ -45,8 +46,8 @@ console.log(typeof stringToNumberType); // Prints number as the result
 console.log(typeof +null);
 console.log(typeof -false);
 
-console.log(1 && 4);
-console.log(1 || 4);
+console.log(1 && 4); //prints the last value as result.
+console.log(1 || 4); //prints first value as result.
 
 console.log(+null);
 console.log(undefined == false);

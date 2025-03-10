@@ -19,7 +19,7 @@ let myLet = "LetLet"; // Can have casesensitive letters
 
 var variableone; // This is known as declaring a variable
 
-var variableone = "valueone"; // This is known as initialisng a variable by storing some value in it.
+var variableone = "valueone"; // This is known as initialising a variable by storing some value in it.
 
 //Let us try to print only declared variable but not initialised with any value
 
@@ -30,7 +30,7 @@ console.log(justDeclaredVariable);
 
 //What if we just declare the variable with empty string
 
-var emptyStringVariable = ""; // dumb try ofcourse it will print empty space as result :)
+var emptyStringVariable = ""; // dumb me try ofcourse it will print empty space as result :)
 console.log(emptyStringVariable);
 
 //Similarly we can also initalise variables using let and const here

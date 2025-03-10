@@ -45,8 +45,8 @@ console.log(typeof stringToNumberType); // Prints number as the result
 console.log(typeof +null);
 console.log(typeof -false);
 
-console.log(1 && 4);
-console.log(1 || 4);
+console.log(1 && 4); //returns the second value as the result in this case 4.
+console.log(1 || 4); //returns the first value as the result in this case 1.
 
 console.log(+null);
 console.log(undefined == false);

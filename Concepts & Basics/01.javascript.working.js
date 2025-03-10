@@ -12,6 +12,9 @@ As the second phase runs the code then inserts the value for the declared variab
 `The memory creation phase and code execution space cannot be directly viewed, but still the phases of the code execution can be viewed under inspect -> sources tab where in 
 a debugger can be deployed at the stages and the memory creation phase and the values being inserted in the created variables sequentially as they are declared in the code!`
 
+var samplevariable; //the memory is allocated for this variable with undefined type and value.
+var simplevariable =  "this is holding some value"; //the type and the value is now assigned in the created meomory for the variable.
+
 `Remeber as we saw in the variables.js that the variables contain different scopes and also we did observe there are three different types - var, let and const with their own properties
 and the var variables can be seen under global scope in the sources section and the rest variables can been seen under script section`
 

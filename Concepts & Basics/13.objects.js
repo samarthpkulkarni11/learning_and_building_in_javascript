@@ -1,12 +1,12 @@
 //We  will be covering objects in js, key-value pairs and working more in depth with objects on modifying the object, how to delete/access a key value pair in objects and so on...
 //this is an basic object with some key-value pairs.
 const sampleObjectOne = {
-    name: "Samarth",
-    profession: "Engineering",
-    interests: "backend/server-side development",
-    age: 23,
-    contactDetails: "samarthpkulkarni11@gmail.com"
-}
+  name: "Samarth",
+  profession: "Engineering",
+  interests: "backend/server-side development",
+  age: 23,
+  contactDetails: "samarthpkulkarni11@gmail.com",
+};
 
 //this is how the key-value pairs are being accessed from the above object.
 console.log(sampleObjectOne["name"]);
@@ -14,11 +14,11 @@ console.log(sampleObjectOne.name);
 
 //delete any key value pair from the object
 delete sampleObjectOne["age"];
-console.log(sampleObjectOne)
+console.log(sampleObjectOne);
 
-//can also be deleted like this 
+//can also be deleted like this
 delete sampleObjectOne.contactDetails;
-console.log(sampleObjectOne)
+console.log(sampleObjectOne);
 
 //let us try to append the object with new property
 
@@ -28,26 +28,26 @@ console.log(sampleObjectOne); //this is updated in memory to include the propert
 //let us try to nest object inside object
 
 const sampleObjectTwo = {
-        name: "Samarth",
-        profession: "Engineering",
-        interests: "backend/server-side development",
-        age: 23,
-        contactDetails: "samarthpkulkarni11@gmail.com",
-        address: {
-            location: "Bidar, Karnataka",
-            pinCode: 585403,
-            phoneNumber: 6363944505,
-            area: "Basava Nagar, Bidar",
-        hobbies: {
-        interests: "pata nahi hoga toh hoga",
-        update: "seh lenge thoda sa"
-        }
+  name: "Samarth",
+  profession: "Engineering",
+  interests: "backend/server-side development",
+  age: 23,
+  contactDetails: "samarthpkulkarni11@gmail.com",
+  address: {
+    location: "Bidar, Karnataka",
+    pinCode: 585403,
+    phoneNumber: 6363944505,
+    area: "Basava Nagar, Bidar",
+    hobbies: {
+      interests: "pata nahi hoga toh hoga",
+      update: "seh lenge thoda sa",
     },
-}
+  },
+};
 
 console.log(sampleObjectTwo.name);
 console.log(sampleObjectTwo.address.location);
-console.log(sampleObjectTwo.address.hobbies.update)
+console.log(sampleObjectTwo.address.hobbies.update);
 
 //Now let us try to learn about object.seal() v/s object.freeze
 //we have seen that our objects can be easily manipulated by adding, deleting or rewriting its properties. To avoid them we have certain methods - seal() and freeze().
@@ -55,19 +55,19 @@ console.log(sampleObjectTwo.address.hobbies.update)
 //let us declare a sample object.
 
 const sampleObjectThree = {
-    name: "Samarth",
-    place: "Bidar, karnataka",
-    phone: "6363944505",
-    profession: "Garibb Engineer",
-    laptop: "Acer"
-}
+  name: "Samarth",
+  place: "Bidar, karnataka",
+  phone: "6363944505",
+  profession: "Garibb Engineer",
+  laptop: "Acer",
+};
 
 //now let us try to seal the object - this does not add or delete the values but the existing values can be altered with new value names.
 
 Object.seal(sampleObjectThree); //once i have sealed the object let us try to alter it with some known operations.
 
 delete sampleObjectThree["place"];
-console.log(sampleObjectThree); //returns back the same object as it cannot delte it
+console.log(sampleObjectThree); //returns back the same object as it cannot delete it
 
 sampleObjectThree.work = "Software Development";
 console.log(sampleObjectThree); //does not append any new value too
@@ -75,7 +75,7 @@ console.log(sampleObjectThree); //does not append any new value too
 sampleObjectThree["name"] = "SAMMY";
 console.log(sampleObjectThree); //okay can alter the pre-declared value for keys.
 
-//let us try now object.freeze() - this does not alter, modify or add anything new to the object 
+//let us try now object.freeze() - this does not alter, modify or add anything new to the object
 
 Object.freeze(sampleObjectThree);
 

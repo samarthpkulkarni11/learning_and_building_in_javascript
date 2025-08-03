@@ -16,6 +16,8 @@ oneRandomValue = true
 
 //now let us implement a nested if else loop and try to get it using ternary operator too and check how it would behave
 
+let someRanndomValue;
+
 if ((someRanndomValue = false)) {
   console.log("false value");
 } else if ((someRanndomValue = "")) {

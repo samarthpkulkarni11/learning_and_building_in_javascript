@@ -7,7 +7,7 @@ const emptyString = " ";
 
 const sentenceString = firstString + " " + numberString;
 
-//Properties and methods related to string
+//Properties and methods related to string - trim, trimStart, trimEnd, includes, concat, padStart, padEnd, indexOf, charAt, charCodeAt and split
 
 //string length property -- to find the string length -> "stringname.length"
 

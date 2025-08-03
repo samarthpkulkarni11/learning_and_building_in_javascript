@@ -4,7 +4,7 @@
 const userInput = prompt("Enter some random number");
 
 if (userInput <= 10) {
-    alert("Nope this want expected");
+    alert("Nope this wasn't expected");
 }
 else if (userInput <= 50) {
     alert("You are close to the expected range");
@@ -20,3 +20,7 @@ else if (userInput >= 50) {
 else {
     alert("Nope You are no where near to the expected range or number :(");
 }
+
+//Using ternary operator
+
+userInput >= 10? "Nope this wasn't expected":"You are in valid range"

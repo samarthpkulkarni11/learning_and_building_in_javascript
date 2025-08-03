@@ -7,7 +7,7 @@
 const varone = 10;
 const vartwo = 20;
 
-console.log("The sum of varone and vartwo is: ", +(varone + vartwo)); //Addded extra () for BODMAS else concatenation iykyk :)
+console.log("The sum of varone and vartwo is: ", +(varone + vartwo)); //Added extra () for BODMAS else concatenation iykyk :)
 
 //M2 - accepting input from user to add a variable and console the sum.
 
@@ -65,8 +65,6 @@ letOne = letThree;
 letTwo = letOne;
 letOne = letThree;
 
-console.log(letOne, letTwo);
-
 //2nd method
 
 [letOne, letTwo] = [letTwo, letOne];
@@ -82,3 +80,11 @@ letOne = letOne - letTwo;
 letOne = letOne ^ letTwo;
 letTwo = letOne ^ letTwo;
 letOne = letOne ^ letTwo;
+
+//this is also one more method which works for strictly non zero inputs
+
+letOne = letOne * letTwo;
+letTwo = letOne / letTwo;
+letOne = letOne / letTwo;
+
+console.log(`The new swapped values are ${letOne}, ${letTwo}`);

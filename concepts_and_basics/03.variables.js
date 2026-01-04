@@ -21,7 +21,7 @@ var variableone; // This is known as declaring a variable
 
 var variableone = "valueone"; // This is known as initialising a variable by storing some value in it.
 
-//Let us try to print only declared variable but not initialised with any value
+//Let us try to print only declared variable but not initialised with any value.
 
 var onlyDeclaredVariable; //returns undefined as the result as the variable is only declared but not initialised by assigning any value to it!
 console.log(onlyDeclaredVariable);

@@ -104,3 +104,4 @@ console.log("c=" + c);
 
 //some more operators like - ==, ===, !=, !==
 //conditional operators like - >,<,>=,<=
+//need to keep in mind that always use === instead of == and !== instead of != for strict comparision and avoid any bugs.

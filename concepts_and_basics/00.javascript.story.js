@@ -11,4 +11,15 @@ which stands for "European Computers Market Association" came up with laying str
 group kept enhancing the language by releasing different versions like ES4, ES5 and ES6. This is the brief history of Mocha aka LiveScript aka JavaScript!
 One more most popular and well known fact that JavaScript earlier used to be a interpreted language (converting the code into byte executable code line by line and then executing)
  but by the graceful powerful introductions of chromes engines like V8 did boost the JavaScript and now JavaScript is popularly known as Just-In-Time Compiler language which 
-compiles the code as it is about to run on a system or a machine.`;
+compiles the code as it is about to run on a system or a machine.
+
+General introduction to the types of programming languages run
+
+1. Compiled langugages - the code which is compiled before it runs and turns into machine/binary code for execution. Ex - C C++ Go Rust - "Compile Once Run Many Times"
+2. Interpreted languages - the code is executed line by line at runtime. Ex - Python, Ruby, PHP - "Read - Execute - Repeat"
+3. Hybrid/Virtual machine based languages - Compiles to bytecode and it is compiled + interpreted which runs on virtual machine. Ex - Java, Kotlin, C#
+4. Javascript lies between compile and interpreting time which brings to JIT compile (just in time compile before running or executing) - Runs inside browser engines (V8, spidermonkey) and server runtimes like (nodejs - V8)
+5. Javascript is dynamically typed (types are checked at runtime)
+
+SO IN ONE LINE JAVASCRIPT IS - Dynamically typed, interpreted language with JIT compilation, executed by a runtime engine.
+`;
